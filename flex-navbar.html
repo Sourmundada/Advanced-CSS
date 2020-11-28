@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background: rgb(226, 226, 77);
+        }
+        .logo h2{
+            padding: 10px 10px;
+            font-weight: 400;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        li {
+            padding: 10px 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 500px){
+            .navbar {
+                flex-direction: column;
+            }
+            .logo h2 {
+                border-bottom: 1px solid #222;
+            }
+            /* ul {
+                flex-direction: column;
+                text-align: center;
+                margin-top: 10px;
+               }*/  /*If you removed this comment, it will appear vertically. */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h2>Brandify</h2>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Create</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+</html>
